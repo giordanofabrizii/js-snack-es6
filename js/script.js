@@ -1,13 +1,4 @@
-// Dwayne Johnson ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
-// Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in ordine di posto:
-// [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
-// Ma  la tipografia per stampare il tutto vuole che le mandiamo una lista di ospiti in un formato specifico, per cui dobbiamo fare in modo che ogni ospite sia un oggetto letterale javascript che ha come proprietà:
-//     nome del tavolo (tableName),
-//     nome dell'ospite (guestName),
-//     posto occupato (place),
-
-
-// Generiamo e stampiamo in console la lista per i segnaposto.
+// > SNACK 1
 
 const guests = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello'];
 
@@ -23,3 +14,33 @@ guests.forEach((guest, index) => {
 });
 
 console.log(invitationList);
+
+//  > SNACK 2
+const students = [
+    {id : 213, name: 'Giuseppina della Rovere', grades : 78},
+    {id : 110, name: 'Paola Cortellessa', grades : 96},
+    {id : 250, name: 'Andrea Mantegna', grades : 48},
+    {id : 145, name: 'Gaia Borromini', grades : 74},
+    {id : 196, name: 'Luigi Grimaldello', grades : 68},
+    {id : 102, name: 'Piero della Francesca', grades : 50},
+    {id : 120, name: 'Francesca da Polenta', grades : 84}
+];
+
+let studentNames = [];
+let studentsSuccessfull = []
+let studentsSuccessfullIdSpecial = [];
+
+
+for (student of students) {
+    studentNames.push(student.name.toUpperCase())
+    if (student.grades > 70) {
+        studentsSuccessfull.push(student);
+        if(student.id > 120) {
+            studentsSuccessfullIdSpecial.push(student);
+        }
+    }
+}
+
+console.log(studentNames);
+console.log(studentsSuccessfull);
+console.log(studentsSuccessfullIdSpecial)
