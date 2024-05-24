@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    max-width: 20rem;
+    padding: 3rem;
+    margin: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 12px;
+    color: white
+}
+
+article > p:first-child{
+    border-bottom: 1px solid white;
+    padding-bottom: .5rem;
+}
+
+article > p:last-child{
+    padding-top: .5rem;
+}
