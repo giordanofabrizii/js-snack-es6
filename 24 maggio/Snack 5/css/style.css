@@ -15,7 +15,7 @@
 }
 
 article {
-    max-width: 20rem;
+    width: 20rem;
     padding: 3rem;
     margin: 1rem;
     backdrop-filter: blur(10px);
@@ -24,7 +24,9 @@ article {
     flex-direction: column;
     text-align: center;
     border-radius: 12px;
-    color: white
+    color: white;
+    transition: .5s all ease;
+    aspect-ratio: 2 / 1;
 }
 
 article > p:first-child{
@@ -34,4 +36,8 @@ article > p:first-child{
 
 article > p:last-child{
     padding-top: .5rem;
+}
+
+article:hover {
+    font-size: 1.5rem;
 }
